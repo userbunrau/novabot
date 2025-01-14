@@ -1,0 +1,1813 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>NovaBot Metin2</title>
+  <style>
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+    }
+
+    .bg {
+      /* The image used */
+      background-image: url("intro.gif");
+
+      /* Full height */
+      height: 100%;
+
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      /* Position the overlay text container */
+      position: relative;
+    }
+
+    .overlay-text {
+      /* Position the overlay text */
+      position: absolute;
+      top: 40%;
+      left: 3%;
+      /* transform: translate(-50%, -50%); */
+
+      /* Add a transparent background */
+      background-color: rgba(0, 0, 0, 0.5);
+
+      /* Add padding and text color */
+      padding: 10px;
+      color: #ffffff;
+    }
+
+    .overlay-text h1 {
+      margin: 0;
+    }
+
+    .content-wrapper {
+      display: flex;
+      align-items: center;
+    }
+
+    .content-text {
+      flex: 1;
+      text-align: center;
+      padding: 40px;
+    }
+
+    .content-image {
+      flex: 1;
+      text-align: center;
+      padding: 40px;
+    }
+  </style>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <style>
+    .mySlides {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+    }
+
+    .header {
+      padding: 20px;
+      color: #333;
+      text-align: center;
+    }
+
+    .header h2 {
+      font-size: 32px;
+      font-weight: bold;
+      margin: 0;
+      text-transform: uppercase;
+    }
+
+    /* CSS for the navigation bar */
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 5;
+    }
+
+    /* CSS styles for the contact section */
+    .contact-section {
+      background-color: #f1f1f1;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .contact-heading {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .contact-info {
+      font-size: 16px;
+    }
+
+    .navbar-nav .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .dropdown-menu {
+      margin-top: 0;
+    }
+
+    .paragraph {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+    <a class="navbar-brand" href="index.html">
+      <img src="M2_bot.png" alt="Logo" style="width: 50px; height: auto;">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Social Media
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <!-- <a class="dropdown-item" href="https://www.youtube.com/@mt2bot">
+              <img src="logos/youtube-logo.png" alt="Youtube Logo" style="width: 20px; height: auto;">
+              Youtube
+            </a> -->
+            <a class="dropdown-item" href="https://www.tiktok.com/@novabotmetin2">
+              <img src="logos/TikTok-icon-glyph.png" alt="TikTok Logo" style="width: 20px; height: auto;">
+              TikTok
+            </a>
+            <a class="dropdown-item" href="https://discord.gg/B7VdJv5BXm">
+              <img src="logos/discord-logo.png" alt="Discord Logo" style="width: 20px; height: auto;">
+              Discord
+            </a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://easyupload.io/tgygw5">Download</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+        <li class="nav-item"></li>
+        <a class="nav-link" href="servers-list.html">Supported servers</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    // Add sticky class to navbar on scroll
+    window.onscroll = function () {
+      var navbar = document.querySelector('.navbar');
+      if (window.pageYOffset > 0) {
+        navbar.classList.add('sticky');
+      } else {
+        navbar.classList.remove('sticky');
+      }
+    };
+  </script>
+
+  <div class="bg">
+  </div>
+
+  <div class="content-wrapper">
+    <div class="content-text">
+      <div class="header">
+        <h2>Introducing NovaBot</h2>
+      </div>
+      <p class="paragraph">
+        The Ultimate Gameforge Utility and Private Server Companion!
+        Uncover the remarkable capabilities of NovaBot, an outstanding bot crafted to elevate your gaming adventure.
+      </p>
+      <p class="paragraph">
+        NovaBot distinguishes itself as an exceptionally unique and essential asset, thanks to its wide array of
+        features and unmatched functionality.
+        Whether you're an experienced player or venturing into private servers, NovaBot has your needs addressed.
+      </p>
+    </div>
+    <div class="content-image">
+      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@novabotmetin2/video/7406790072411966752"
+        data-video-id="7406790072411966752" style="max-width: 605px;min-width: 325px;">
+        <section> <a target="_blank" title="@novabotmetin2"
+            href="https://www.tiktok.com/@novabotmetin2?refer=embed">@novabotmetin2</a> Cronos2Metin2 hack by Lucybot <a
+            title="muiepopica" target="_blank" href="https://www.tiktok.com/tag/muiepopica?refer=embed">#muiepopica</a>
+          <a title="metin2" target="_blank" href="https://www.tiktok.com/tag/metin2?refer=embed">#metin2</a> <a
+            title="metin2cronos" target="_blank"
+            href="https://www.tiktok.com/tag/metin2cronos?refer=embed">#metin2cronos</a> <a title="cronos2"
+            target="_blank" href="https://www.tiktok.com/tag/cronos2?refer=embed">#cronos2</a> <a title="metin2cronos2"
+            target="_blank" href="https://www.tiktok.com/tag/metin2cronos2?refer=embed">#metin2cronos2</a> <a
+            title="hackmetin2" target="_blank" href="https://www.tiktok.com/tag/hackmetin2?refer=embed">#hackmetin2</a>
+          <a target="_blank" title="♬ sunet original - m2lucybot - NovaBotmetin2"
+            href="https://www.tiktok.com/music/sunet-original-m2lucybot-7406790119312640801?refer=embed">♬ sunet
+            original - m2lucybot - NovaBotmetin2</a>
+        </section>
+      </blockquote>
+      <script async src="https://www.tiktok.com/embed.js"></script>
+      <!-- <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@m2lucybot/video/7406790072411966752" data-video-id="7406790072411966752" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@m2lucybot" href="https://www.tiktok.com/@m2lucybot?refer=embed">@m2lucybot</a> Cronos2Metin2 hack by Lucybot <a title="muiepopica" target="_blank" href="https://www.tiktok.com/tag/muiepopica?refer=embed">#muiepopica</a> <a title="metin2" target="_blank" href="https://www.tiktok.com/tag/metin2?refer=embed">#metin2</a> <a title="metin2cronos" target="_blank" href="https://www.tiktok.com/tag/metin2cronos?refer=embed">#metin2cronos</a> <a title="cronos2" target="_blank" href="https://www.tiktok.com/tag/cronos2?refer=embed">#cronos2</a> <a title="metin2cronos2" target="_blank" href="https://www.tiktok.com/tag/metin2cronos2?refer=embed">#metin2cronos2</a> <a title="hackmetin2" target="_blank" href="https://www.tiktok.com/tag/hackmetin2?refer=embed">#hackmetin2</a> <a target="_blank" title="♬ sunet original  - m2lucybot" href="https://www.tiktok.com/music/sunet-original-m2lucybot-7406790119312640801?refer=embed">♬ sunet original  - m2lucybot</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script> -->
+      <!-- <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@lucybotmetin2/video/7399665692707999009" data-video-id="7399665692707999009" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@lucybotmetin2" href="https://www.tiktok.com/@lucybotmetin2?refer=embed">@lucybotmetin2</a> Metin2 Official hack by LucyBot <a title="metin2" target="_blank" href="https://www.tiktok.com/tag/metin2?refer=embed">#metin2</a> <a title="metin2de" target="_blank" href="https://www.tiktok.com/tag/metin2de?refer=embed">#metin2de</a> <a title="metin2tr" target="_blank" href="https://www.tiktok.com/tag/metin2tr?refer=embed">#metin2tr</a> <a title="metin2pl" target="_blank" href="https://www.tiktok.com/tag/metin2pl?refer=embed">#metin2pl</a> <a title="metin2romania" target="_blank" href="https://www.tiktok.com/tag/metin2romania?refer=embed">#metin2romania</a> <a target="_blank" title="♬ Metin 2 (Unkwon Composer) - Amok" href="https://www.tiktok.com/music/Metin-2-Unkwon-Composer-6832229311513102337?refer=embed">♬ Metin 2 (Unkwon Composer) - Amok</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>      <iframe width="600" height="355" src="https://www.youtube.com/embed/TRWbdoj25tQ?si=mJoKc4K9g_pLVM6O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+      <!-- <iframe width="600" height="355" src="https://www.youtube.com/embed/SK2C5T-z6Gg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+    </div>
+  </div>
+
+  <div class="content-wrapper">
+    <div class="content-image">
+      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@novabotmetin2/video/7406790072411966752"
+        data-video-id="7406790072411966752" style="max-width: 605px;min-width: 325px;">
+        <section> <a target="_blank" title="@novabotmetin2"
+            href="https://www.tiktok.com/@novabotmetin2?refer=embed">@novabotmetin2</a> Cronos2Metin2 hack by Lucybot <a
+            title="muiepopica" target="_blank" href="https://www.tiktok.com/tag/muiepopica?refer=embed">#muiepopica</a>
+          <a title="metin2" target="_blank" href="https://www.tiktok.com/tag/metin2?refer=embed">#metin2</a> <a
+            title="metin2cronos" target="_blank"
+            href="https://www.tiktok.com/tag/metin2cronos?refer=embed">#metin2cronos</a> <a title="cronos2"
+            target="_blank" href="https://www.tiktok.com/tag/cronos2?refer=embed">#cronos2</a> <a title="metin2cronos2"
+            target="_blank" href="https://www.tiktok.com/tag/metin2cronos2?refer=embed">#metin2cronos2</a> <a
+            title="hackmetin2" target="_blank" href="https://www.tiktok.com/tag/hackmetin2?refer=embed">#hackmetin2</a>
+          <a target="_blank" title="♬ sunet original - m2lucybot - NovaBotmetin2"
+            href="https://www.tiktok.com/music/sunet-original-m2lucybot-7406790119312640801?refer=embed">♬ sunet
+            original - m2lucybot - NovaBotmetin2</a>
+        </section>
+      </blockquote>
+      <script async src="https://www.tiktok.com/embed.js"></script>
+      <!-- <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@m2lucybot/video/7403307614328622369" data-video-id="7403307614328622369" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@m2lucybot" href="https://www.tiktok.com/@m2lucybot?refer=embed">@m2lucybot</a> Waithack Metin2 official<a title="metin2" target="_blank" href="https://www.tiktok.com/tag/metin2?refer=embed">#metin2</a> <a title="metin2ro" target="_blank" href="https://www.tiktok.com/tag/metin2ro?refer=embed">#metin2ro</a> <a title="metin2tr" target="_blank" href="https://www.tiktok.com/tag/metin2tr?refer=embed">#metin2tr</a> <a title="metin2de" target="_blank" href="https://www.tiktok.com/tag/metin2de?refer=embed">#metin2de</a> <a title="hackmetin2" target="_blank" href="https://www.tiktok.com/tag/hackmetin2?refer=embed">#hackmetin2</a> <a title="metin2hack" target="_blank" href="https://www.tiktok.com/tag/metin2hack?refer=embed">#metin2hack</a> <a target="_blank" title="♬ sunet original m2lucybot" href="https://www.tiktok.com/music/sunet-original-m2lucybot-0?refer=embed">♬ sunet original m2lucybot</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script> -->
+      <!-- <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@lucybotmetin2/video/7399663296745393440" data-video-id="7399663296745393440" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@lucybotmetin2" href="https://www.tiktok.com/@lucybotmetin2?refer=embed">@lucybotmetin2</a> Fishbot hack Wom2 by LucyBot <a title="wom2" target="_blank" href="https://www.tiktok.com/tag/wom2?refer=embed">#wom2</a> <a title="metin2tr" target="_blank" href="https://www.tiktok.com/tag/metin2tr?refer=embed">#metin2tr</a> <a title="metin2ro" target="_blank" href="https://www.tiktok.com/tag/metin2ro?refer=embed">#metin2ro</a> <a title="metin2de" target="_blank" href="https://www.tiktok.com/tag/metin2de?refer=embed">#metin2de</a> <a title="metin2hack" target="_blank" href="https://www.tiktok.com/tag/metin2hack?refer=embed">#metin2hack</a> <a title="metin2farm" target="_blank" href="https://www.tiktok.com/tag/metin2farm?refer=embed">#metin2farm</a> <a title="metin" target="_blank" href="https://www.tiktok.com/tag/metin?refer=embed">#metin</a> <a title="metin2" target="_blank" href="https://www.tiktok.com/tag/metin2?refer=embed">#metin2</a> <a target="_blank" title="♬ Metin 2 (Unkwon Composer) - Amok" href="https://www.tiktok.com/music/Metin-2-Unkwon-Composer-6832229311513102337?refer=embed">♬ Metin 2 (Unkwon Composer) - Amok</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script> -->
+      <!-- <iframe width="600" height="355" src="https://www.youtube.com/embed/_gIgRVjtkU0?si=LsgUTOeUy6wa3beU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+      <!-- <iframe width="600" height="355" src="https://www.youtube.com/embed/7wf5FhFLYFQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+    </div>
+    <div class="content-text">
+      <div class="header">
+        <h2>Features</h2>
+      </div>
+      <p class="paragraph">
+        Get ready to be astounded by the incredible versatility of NovaBot. Among its remarkable features is the
+        exclusive x200 mode,
+        a game-changing capability found only on our YouTube channel. Brace yourself to elevate your gaming experience
+        to unprecedented
+        levels and attain unmatched success.
+      </p>
+      <p class="paragraph">
+        We understand that you may have questions about NovaBot's pricing or specific functionalities.
+        Look no further! Our dedicated support team is readily available on Discord to provide you with prompt
+        assistance and address any inquiries you may have. We value our users' satisfaction and strive to ensure a
+        seamless and fulfilling experience.
+      </p>
+    </div>
+  </div>
+
+  <!-- <div class="header">
+    <h2>Interface</h2>
+  </div>
+  <div class="w3-content w3-display-container" style="padding: 40px;">
+    <img class="mySlides" src="slideshow/1.png" style="width:90%">
+    <img class="mySlides" src="slideshow/2.png" style="width:90%">
+    <img class="mySlides" src="slideshow/3.png" style="width:90%">
+  
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+  </div> -->
+
+  <div class="content-wrapper">
+    <div class="content-text">
+      <div class="header">
+        <h2>JOIN US</h2>
+      </div>
+      <p class="paragraph">
+        NovaBot goes beyond being just a tool—it's a community. Join our dynamic Discord community
+        and become part of a vibrant network of gamers, where you can connect with like-minded individuals, share
+        strategies,
+        and stay up to date with the latest NovaBot developments.
+      </p>
+    </div>
+    <div class="content-image">
+      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@novabotmetin2/video/7403316872956955937"
+        data-video-id="7403316872956955937" style="max-width: 605px;min-width: 325px;">
+        <section> <a target="_blank" title="@novabotmetin2"
+            href="https://www.tiktok.com/@novabotmetin2?refer=embed">@novabotmetin2</a> Hydra Metin2 official x200 hack
+          <a title="metin2" target="_blank" href="https://www.tiktok.com/tag/metin2?refer=embed">#metin2</a> <a
+            title="metin2tr" target="_blank" href="https://www.tiktok.com/tag/metin2tr?refer=embed">#metin2tr</a> <a
+            title="metin2de" target="_blank" href="https://www.tiktok.com/tag/metin2de?refer=embed">#metin2de</a> <a
+            title="hackmetin2" target="_blank" href="https://www.tiktok.com/tag/hackmetin2?refer=embed">#hackmetin2</a>
+          <a title="metin2hack" target="_blank"
+            href="https://www.tiktok.com/tag/metin2hack?refer=embed">#metin2hack</a><a title="metin2romania"
+            target="_blank" href="https://www.tiktok.com/tag/metin2romania?refer=embed">#metin2romania</a> <a
+            target="_blank" title="♬ sunet original - m2lucybot - NovaBotmetin2"
+            href="https://www.tiktok.com/music/sunet-original-m2lucybot-7403316939051387680?refer=embed">♬ sunet
+            original - m2lucybot - NovaBotmetin2</a>
+        </section>
+      </blockquote>
+      <script async src="https://www.tiktok.com/embed.js"></script>
+      <!-- <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@m2lucybot/video/7403316872956955937" data-video-id="7403316872956955937" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@m2lucybot" href="https://www.tiktok.com/@m2lucybot?refer=embed">@m2lucybot</a> Hydra Metin2 official x200 hack <a title="metin2" target="_blank" href="https://www.tiktok.com/tag/metin2?refer=embed">#metin2</a> <a title="metin2tr" target="_blank" href="https://www.tiktok.com/tag/metin2tr?refer=embed">#metin2tr</a> <a title="metin2de" target="_blank" href="https://www.tiktok.com/tag/metin2de?refer=embed">#metin2de</a> <a title="hackmetin2" target="_blank" href="https://www.tiktok.com/tag/hackmetin2?refer=embed">#hackmetin2</a> <a title="metin2hack" target="_blank" href="https://www.tiktok.com/tag/metin2hack?refer=embed">#metin2hack</a><a title="metin2romania" target="_blank" href="https://www.tiktok.com/tag/metin2romania?refer=embed">#metin2romania</a> <a target="_blank" title="♬ sunet original  - m2lucybot" href="https://www.tiktok.com/music/sunet-original-m2lucybot-7403316939051387680?refer=embed">♬ sunet original  - m2lucybot</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script> -->
+      <!-- <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@lucybotmetin2/video/7399659884737744160" data-video-id="7399659884737744160" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@lucybotmetin2" href="https://www.tiktok.com/@lucybotmetin2?refer=embed">@lucybotmetin2</a> x200 hack Metin2 Official by LucyBot <a title="metin2" target="_blank" href="https://www.tiktok.com/tag/metin2?refer=embed">#metin2</a> <a title="wom2" target="_blank" href="https://www.tiktok.com/tag/wom2?refer=embed">#wom2</a> <a title="nostalgia2" target="_blank" href="https://www.tiktok.com/tag/nostalgia2?refer=embed">#nostalgia2</a> <a title="origins2" target="_blank" href="https://www.tiktok.com/tag/origins2?refer=embed">#origins2</a> <a title="velor2" target="_blank" href="https://www.tiktok.com/tag/velor2?refer=embed">#velor2</a> <a title="carpathians" target="_blank" href="https://www.tiktok.com/tag/carpathians?refer=embed">#carpathians</a> <a title="metin2ro" target="_blank" href="https://www.tiktok.com/tag/metin2ro?refer=embed">#metin2ro</a> <a target="_blank" title="♬ Metin 2 (Unkwon Composer) - Amok" href="https://www.tiktok.com/music/Metin-2-Unkwon-Composer-6832229311513102337?refer=embed">♬ Metin 2 (Unkwon Composer) - Amok</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script> -->
+      <!-- <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@mt2bot/video/7281680548781755680" data-video-id="7281680548781755680" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@mt2bot" href="https://www.tiktok.com/@mt2bot?refer=embed">@mt2bot</a> METIN BOT <a title="metin2" target="_blank" href="https://www.tiktok.com/tag/metin2?refer=embed">#metin2</a> <a target="_blank" title="♬ sunet original - METIN2 HACK" href="https://www.tiktok.com/music/sunet-original-7281680569216355104?refer=embed">♬ sunet original - METIN2 HACK</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script> -->
+      <!-- <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@serrybotmetin2/video/7229422015931796762" data-video-id="7229422015931796762" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@serrybotmetin2" href="https://www.tiktok.com/@serrybotmetin2?refer=embed">@serrybotmetin2</a> Metin2 Official Hydra Hack SerryBot<a title="metin2" target="_blank" href="https://www.tiktok.com/tag/metin2?refer=embed">#metin2</a> <a title="metin2tr" target="_blank" href="https://www.tiktok.com/tag/metin2tr?refer=embed">#metin2tr</a> <a title="metin2ro" target="_blank" href="https://www.tiktok.com/tag/metin2ro?refer=embed">#metin2ro</a> <a title="metin2hack" target="_blank" href="https://www.tiktok.com/tag/metin2hack?refer=embed">#metin2hack</a> <a title="metin2hackpl" target="_blank" href="https://www.tiktok.com/tag/metin2hackpl?refer=embed">#metin2hackpl</a> <a title="wom2" target="_blank" href="https://www.tiktok.com/tag/wom2?refer=embed">#wom2</a> <a title="wom2hack" target="_blank" href="https://www.tiktok.com/tag/wom2hack?refer=embed">#wom2hack</a> <a title="hackmetin22022" target="_blank" href="https://www.tiktok.com/tag/hackmetin22022?refer=embed">#hackmetin22022</a> <a title="hackmetin" target="_blank" href="https://www.tiktok.com/tag/hackmetin?refer=embed">#hackmetin</a> <a title="carpathians" target="_blank" href="https://www.tiktok.com/tag/carpathians?refer=embed">#carpathians</a> <a title="tararomaneasca" target="_blank" href="https://www.tiktok.com/tag/tararomaneasca?refer=embed">#tararomaneasca</a> <a title="romania" target="_blank" href="https://www.tiktok.com/tag/romania?refer=embed">#romania</a> <a title="fy" target="_blank" href="https://www.tiktok.com/tag/fy?refer=embed">#fy</a> <a title="5pasidebine" target="_blank" href="https://www.tiktok.com/tag/5pasidebine?refer=embed">#5pasidebine</a> <a title="5p" target="_blank" href="https://www.tiktok.com/tag/5p?refer=embed">#5p</a> <a title="serrybot" target="_blank" href="https://www.tiktok.com/tag/serrybot?refer=embed">#serrybot</a> <a title="origins2" target="_blank" href="https://www.tiktok.com/tag/origins2?refer=embed">#origins2</a> <a title="aeldra" target="_blank" href="https://www.tiktok.com/tag/aeldra?refer=embed">#aeldra</a> <a title="zeta" target="_blank" href="https://www.tiktok.com/tag/zeta?refer=embed">#zeta</a> <a title="zeya" target="_blank" href="https://www.tiktok.com/tag/zeya?refer=embed">#zeya</a> <a title="nostalgia2" target="_blank" href="https://www.tiktok.com/tag/nostalgia2?refer=embed">#nostalgia2</a> <a title="x200hack" target="_blank" href="https://www.tiktok.com/tag/x200hack?refer=embed">#x200hack</a> <a title="besthack" target="_blank" href="https://www.tiktok.com/tag/besthack?refer=embed">#besthack</a> <a title="wom2" target="_blank" href="https://www.tiktok.com/tag/wom2?refer=embed">#wom2</a> <a target="_blank" title="♬ sunet original  - serrybotmetin2" href="https://www.tiktok.com/music/sunet-original-serrybotmetin2-7229422613624310555?refer=embed">♬ sunet original  - serrybotmetin2</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script> -->
+    </div>
+  </div>
+
+  <!-- <div class="content-text">
+    <ul class="list-group">
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        Calliope2
+        <span class="badge badge-success">Working</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        Dapibus ac facilisis in
+        <span class="badge badge-warning">Updating</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        Morbi leo risus
+        <span class="badge badge-success">Working</span>
+      </li>
+    </ul>
+  </div> -->
+
+  <div class="content-wrapper" style="background-color: #343a40">
+    <div class="content-text">
+      <h1 class="display-4" style="color: white; padding: 3%;">Supported servers</h1>
+      <div style="max-height: 240px; overflow-y: scroll;">
+        <table class="table table-hover table-dark">
+          <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Website</th>
+              <th scope="col">Status</th>
+              <th scope="col">Plan</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mobile2Global</td>
+              <td><a href="https://mobile2.global/">https://mobile2.global/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+            <tr>
+              <td>Calliope2</td>
+              <td><a href="https://global.calliope2-international.com/">https://global.calliope2-international.com/</a>
+              </td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+            <tr>
+              <td>M6 Raw</td>
+              <td><a href="https://mmo.m6raw.com/">https://mmo.m6raw.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+            <tr>
+              <td>Metin2009</td>
+              <td><a href="https://metin2009.ro/">https://metin2009.ro/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+            <tr>
+              <td>Alaska2</td>
+              <td><a href="https://alaska2.ro/">https://alaska2.ro/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+            <tr>
+              <td>Azyrah</td>
+              <td><a href="https://azyrah.to/">https://azyrah.to/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+            <tr>
+              <td>Rubinum</td>
+              <td><a href="https://rubinum.io/">https://rubinum.io/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+            <tr>
+              <td>Sancy</td>
+              <td><a href="https://sancy.to/">https://sancy.to/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+            <tr>
+              <td>Zarkana2</td>
+              <td><a href="https://zarkana2.ro/">https://zarkana2.ro/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+            <tr>
+              <td>ArtOfMetin2</td>
+              <td><a href="https://playAOM2.ro">https://playAOM2.ro</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+            <tr>
+              <td>Metin2Herad</td>
+              <td><a href="https://metin2herad.ro/">https://metin2herad.ro/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+            <tr>
+              <td>Zenit</td>
+              <td><a href="https://zenit.bz/">https://zenit.bz/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+            <tr>
+              <td>Shiva</td>
+              <td><a href="https://shiva.international/">https://shiva.international/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+            <tr>
+              <td>Astra2</td>
+              <td><a href="https://astra2.net/">https://astra2.net/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+            <tr>
+              <td>N2Play</td>
+              <td><a href="https://n2play.org/home">https://n2play.org/home</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+            <tr>
+              <td>Nemerum</td>
+              <td><a href="https://nemerum.com/en">https://nemerum.com/en</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+            <tr>
+              <td>OldMetin2</td>
+              <td><a href="https://oldmetin2.ro/">https://oldmetin2.ro/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+            <tr>
+              <td>Vertas2</td>
+              <td><a href="https://vertas2.com/">https://vertas2.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+            <tr>
+              <td>Metin2SG</td>
+              <td><a href="https://www.metin2sg.com/">https://www.metin2sg.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+            <tr>
+              <td>Nethara2</td>
+              <td><a href="https://www.nethara2.com/">https://www.nethara2.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+            <tr>
+              <td>Solana2</td>
+              <td><a href="https://solana2.global/">https://solana2.global/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+            <tr>
+              <td>Sidra2</td>
+              <td><a href="https://sidra2.com/?lang=en">https://sidra2.com/?lang=en</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+            <tr>
+              <td>Metin2GoodTimes</td>
+              <td><a href="https://metin2goodtimes.ro/?lang=en">https://metin2goodtimes.ro/?lang=en</a></td>
+              <td><span class="badge badge-warning">Updating</span></td>
+              <td>Premium</td>
+            </tr>
+            <tr>
+              <td>WoM2</td>
+              <td><a href="https://global.wom2.org/">https://global.wom2.org/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+            <tr>
+              <td>Yeogsa</td>
+              <td><a href="https://yeogsa.com/">https://yeogsa.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+            <tr>
+              <td>Nova2Remastered</td>
+              <td><a href="https://nova2.global/">https://nova2.global/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+            <tr>
+              <td>AgeOfMagis</td>
+              <td><a href="https://ageofmagis.com/">https://ageofmagis.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+            <tr>
+              <td>Rodnia2</td>
+              <td><a href="https://rise.rodnia.to/">https://rise.rodnia.to/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+            <tr>
+              <td>M6Raw</td>
+              <td><a href="https://mmo.m6raw.com/">https://mmo.m6raw.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+            <tr>
+              <td>Manwe2</td>
+              <td><a href="https://manwe2.com/">https://manwe2.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+            <tr>
+              <td>Ashia2</td>
+              <td><a href="https://www.ashia2.cz/">https://www.ashia2.cz/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+            <tr>
+              <td>Avalon2</td>
+              <td><a href="https://avalonmt2.pl/main/news">https://avalonmt2.pl/main/news</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+            <tr>
+              <td>Avaria2</td>
+              <td><a href="https://avaria2.biz/">https://avaria2.biz/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+            <tr>
+              <td>ElsMetin2</td>
+              <td><a href="https://elsmetin2.com/">https://elsmetin2.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+            <!-- Add more rows as needed -->
+
+            <tr>
+              <td>Merlis</td>
+              <td><a href="https://merlis.eu/">https://merlis.eu/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Elveron</td>
+              <td><a href="https://elveron.to/">https://elveron.to/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Korthia2</td>
+              <td><a href="https://korthia.to/">https://korthia.to/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Dw2</td>
+              <td><a href="https://dw2.global/">https://dw2.global/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Normal</td>
+            </tr>
+
+            <tr>
+              <td>Rop2</td>
+              <td><a href="https://rop2.ro/">https://rop2.ro/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Normal</td>
+            </tr>
+
+            <tr>
+              <td>Oryum2</td>
+              <td><a href="https://oryum.io/">https://oryum.io/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Arken2</td>
+              <td><a href="https://www.arkenmt2.com/">https://www.arkenmt2.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Horizon2</td>
+              <td><a href="https://horizongame.eu/">https://horizongame.eu/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Normal</td>
+            </tr>
+
+            <tr>
+              <td>Mt2capital</td>
+              <td><a href="https://www.mt2ca.com/">https://www.mt2ca.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>M2classic</td>
+              <td><a href="https://m2c.to/">https://m2c.to/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Arkenmt2</td>
+              <td><a href="https://www.arkenmt2.com/">https://www.arkenmt2.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Lotusmt2</td>
+              <td><a href="https://lotusmt2.com/">https://lotusmt2.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Nostaljimt2</td>
+              <td><a href="https://nostaljimetin2.com/">https://nostaljimetin2.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Normal</td>
+            </tr>
+
+            <tr>
+              <td>Origins2</td>
+              <td><a href="https://www.origins2.global/">https://www.origins2.global/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Rohan2</td>
+              <td><a href="https://rohan2.global/">https://rohan2.global/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Mt2portugalia</td>
+              <td><a href="https://www.mt2portugalia.pt/">https://www.mt2portugalia.pt/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Luminos2</td>
+              <td><a href="https://luminus2.io/">https://luminus2.io/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Kronius2</td>
+              <td><a href="https://kronius2.vip/">https://kronius2.vip/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Mt2old</td>
+              <td><a href="https://mt2old.com/">https://mt2old.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Legend2</td>
+              <td><a href="https://legend2.online/">https://legend2.online/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Solana2</td>
+              <td><a href="https://solana2.global/">https://solana2.global/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Endlesslongju</td>
+              <td><a href="https://endlesslongjureloaded.it/">https://endlesslongjureloaded.it/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Eskimt2</td>
+              <td><a href="https://eskimetin2.com/">https://eskimetin2.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Rubinum</td>
+              <td><a href="https://rubinum.io/">https://rubinum.io/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>M2hero</td>
+              <td><a href="https://m2-hero.com/">https://m2-hero.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Ashiro2</td>
+              <td><a href="https://ashiro2.com/">https://ashiro2.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Hiron2</td>
+              <td><a href="https://hiron2.ro/">https://hiron2.ro/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Legend2</td>
+              <td><a href="https://legend2.fr/">https://legend2.fr/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Sidra2</td>
+              <td><a href="https://sidra2.com/">https://sidra2.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Freemt2</td>
+              <td><a href="https://freemt2.com/">https://freemt2.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Normal</td>
+            </tr>
+
+            <tr>
+              <td>Lucerna</td>
+              <td><a href="https://lucerna.to/">https://lucerna.to/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Elysium2</td>
+              <td><a href="https://elysium2.global/">https://elysium2.global/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Rodnia</td>
+              <td><a href="https://rodnia.to/">https://rodnia.to/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Nethan</td>
+              <td><a href="https://nethan2.com/">https://nethan2.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Eden2</td>
+              <td><a href="https://eden2.it/">https://eden2.it/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Nortic2</td>
+              <td><a href="https://nortic2.online/">https://nortic2.online/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Normal</td>
+            </tr>
+
+            <tr>
+              <td>Syndra2</td>
+              <td><a href="https://syndra.eu/">https://syndra.eu/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Honor2</td>
+              <td><a href="https://honor2.net/">https://honor2.net/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Gondor2</td>
+              <td><a href="https://gondor2.com/">https://gondor2.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Thrones2</td>
+              <td><a href="https://thrones2.ro/">https://thrones2.ro/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Normal</td>
+            </tr>
+
+            <tr>
+              <td>Lorien</td>
+              <td><a href="https://lorienmt2.com/">https://lorienmt2.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Normal</td>
+            </tr>
+
+            <tr>
+              <td>Metin2009</td>
+              <td><a href="https://metin2009.ro/">https://metin2009.ro/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Normal</td>
+            </tr>
+
+            <tr>
+              <td>Mt2vikings</td>
+              <td><a href="https://www.mt2vikings.com/">https://www.mt2vikings.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Farm2</td>
+              <td><a href="https://farm2.global/">https://farm2.global/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Normal</td>
+            </tr>
+
+            <tr>
+              <td>Sparky2</td>
+              <td><a href="https://sparky2.online/">https://sparky2.online/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Normal</td>
+            </tr>
+
+            <tr>
+              <td>Guabina2</td>
+              <td><a href="https://metin2server.com/es/login">https://metin2server.com/es/login</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Elaris2</td>
+              <td><a href="https://elaris2.global/">https://elaris2.global/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Requilion2</td>
+              <td><a href="https://requilion2.eu/">https://requilion2.eu/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Normal</td>
+            </tr>
+
+            <tr>
+              <td>Albion2</td>
+              <td><a href="https://albion2.ro/">https://albion2.ro/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Normal</td>
+            </tr>
+
+            <tr>
+              <td>Age of magis</td>
+              <td><a href="https://ageofmagis.com/">https://ageofmagis.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Wom2</td>
+              <td><a href="https://wom2.org/">https://wom2.org/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Alaska2</td>
+              <td><a href="https://alaska2.ro/">https://alaska2.ro/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Aom2</td>
+              <td><a href="https://aom2.org/">https://aom2.org/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Calliope2</td>
+              <td><a href="https://calliope2-international.com/">https://calliope2-international.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Metin2sg</td>
+              <td><a href="https://metin2sg.com/">https://metin2sg.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Celestial-world</td>
+              <td><a href="https://celestial-world.com/">https://celestial-world.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Nova2 remastered</td>
+              <td><a href="https://remastered.novametin2.com/">https://remastered.novametin2.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Polandmt2</td>
+              <td><a href="https://polandmt2.pl/">https://polandmt2.pl/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Alestia</td>
+              <td><a href="https://alestia.pl/">https://alestia.pl/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Metin2global</td>
+              <td><a href="https://www.metin2-global.com/">https://www.metin2-global.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Glevia2</td>
+              <td><a href="https://glevia2.pl/">https://glevia2.pl/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Glevia2akademia</td>
+              <td><a href="Strona główna | Akademia Glevia2">Strona główna | Akademia Glevia2</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Wox2</td>
+              <td><a href="https://wox2.com/">https://wox2.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Normal</td>
+            </tr>
+
+            <tr>
+              <td>Hermes</td>
+              <td><a href="https://hermes2.com.tr/">https://hermes2.com.tr/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Normal</td>
+            </tr>
+
+            <tr>
+              <td>Royale</td>
+              <td><a href="https://www.royale.com.tr/en">https://www.royale.com.tr/en</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Mobile2</td>
+              <td><a href="https://mobile2.global/home">https://mobile2.global/home</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Hera2</td>
+              <td><a href="https://hera2-pvp.ro/">https://hera2-pvp.ro/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Normal</td>
+            </tr>
+
+            <tr>
+              <td>Goodtimes</td>
+              <td><a href="https://metin2goodtimes.ro/">https://metin2goodtimes.ro/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Notorius2</td>
+              <td><a href="https://notorius2.com/">https://notorius2.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Stonebreakers</td>
+              <td><a href="https://stonebreakers2.com/">https://stonebreakers2.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Kazuna2</td>
+              <td><a href="Kazuna2 - Middleschool [International]">Kazuna2 - Middleschool [International]</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Normal</td>
+            </tr>
+
+            <tr>
+              <td>Panamera2</td>
+              <td><a href="Metin2 Panamera Download">Metin2 Panamera Download</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Normal</td>
+            </tr>
+
+            <tr>
+              <td>Dema2</td>
+              <td><a href="Dema2.ro • Dema2">Dema2.ro • Dema2</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Normal</td>
+            </tr>
+
+            <tr>
+              <td>Northmt2</td>
+              <td><a href="https://www.northmt2.org/">https://www.northmt2.org/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Normal</td>
+            </tr>
+
+            <tr>
+              <td>Balmora</td>
+              <td><a href="https://akademia.balmora.pl/">https://akademia.balmora.pl/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Hom2</td>
+              <td><a href="https://hom2.ro/">https://hom2.ro/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Normal</td>
+            </tr>
+
+            <tr>
+              <td>Tugra2</td>
+              <td><a href="https://tugra2.com/">https://tugra2.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Eldoria2</td>
+              <td><a href="https://eldoria2.com/">https://eldoria2.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Remastered</td>
+              <td><a href="https://www.metin2remastered.com/">https://www.metin2remastered.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Xhantia2</td>
+              <td><a href="https://xhantia.com/">https://xhantia.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Normal</td>
+            </tr>
+
+            <tr>
+              <td>Lykos2</td>
+              <td><a href="https://lykos2.com/">https://lykos2.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Normal</td>
+            </tr>
+
+            <tr>
+              <td>Dorcia</td>
+              <td><a href="https://dorcia2.com/">https://dorcia2.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Normal</td>
+            </tr>
+
+            <tr>
+              <td>Lusia2</td>
+              <td><a href="https://lusia2.com/">https://lusia2.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Normal</td>
+            </tr>
+
+            <tr>
+              <td>World2online</td>
+              <td><a href="https://world2online.com/">https://world2online.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Normal</td>
+            </tr>
+
+            <tr>
+              <td>Osiris2</td>
+              <td><a href="https://osiris2.net/">https://osiris2.net/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Normal</td>
+            </tr>
+
+            <tr>
+              <td>Hardmt2</td>
+              <td><a href="https://hardmt2.com/">https://hardmt2.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Auramt2</td>
+              <td><a href="https://auramt2.com/">https://auramt2.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Normal</td>
+            </tr>
+
+            <tr>
+              <td>Piya2</td>
+              <td><a href="https://piya2duello.com/">https://piya2duello.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Normal</td>
+            </tr>
+
+            <tr>
+              <td>M2best</td>
+              <td><a href="https://m2best.com/">https://m2best.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Albamt2</td>
+              <td><a href="https://albamt2.com/">https://albamt2.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Normal</td>
+            </tr>
+
+            <tr>
+              <td>Officialmt2</td>
+              <td><a href="https://oficialmt2.ro/">https://oficialmt2.ro/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Obscuremt2</td>
+              <td><a href="https://obscuremt2.com/">https://obscuremt2.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Pegasus2</td>
+              <td><a href="https://pegasus2.ro/">https://pegasus2.ro/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Harbi2</td>
+              <td><a href="https://harbi2global.com/">https://harbi2global.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Hardschool2</td>
+              <td><a href="https://hardschool2.com/">https://hardschool2.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Rayka</td>
+              <td><a href="https://rayka.fr/">https://rayka.fr/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Pangeayt</td>
+              <td><a href="https://pangeayt2.eu/">https://pangeayt2.eu/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Seishin</td>
+              <td><a href="https://seishin.xyz/">https://seishin.xyz/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>M2rayn</td>
+              <td><a href="https://m2rayn.com/web/index">https://m2rayn.com/web/index</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Erametin2</td>
+              <td><a href="https://erametin2.com/">https://erametin2.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Normal</td>
+            </tr>
+
+            <tr>
+              <td>Zerion2</td>
+              <td><a href="https://zerion.international/">https://zerion.international/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Normal</td>
+            </tr>
+
+            <tr>
+              <td>Sinners2</td>
+              <td><a href="https://sinners2.ro/">https://sinners2.ro/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Normal</td>
+            </tr>
+
+            <tr>
+              <td>Shyra</td>
+              <td><a href="https://shyra.online/">https://shyra.online/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Ayazmt2</td>
+              <td><a href="https://ayazmt2.com/">https://ayazmt2.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Longju</td>
+              <td><a href="https://www.i-longju.com/">https://www.i-longju.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Emek2</td>
+              <td><a href="https://emek2.com/">https://emek2.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Sow</td>
+              <td><a href="https://sow.hu/">https://sow.hu/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Normal</td>
+            </tr>
+
+            <tr>
+              <td>Tundria2</td>
+              <td><a href="https://tundria2.pl/home">https://tundria2.pl/home</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Imperiaworld</td>
+              <td><a href="https://www.imperiaworld2.com/">https://www.imperiaworld2.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Normal</td>
+            </tr>
+
+            <tr>
+              <td>Roxgame</td>
+              <td><a href="https://roxgame.org/">https://roxgame.org/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Normal</td>
+            </tr>
+
+            <tr>
+              <td>M2board</td>
+              <td><a href="https://www.m2-board.com/">https://www.m2-board.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Newmt2</td>
+              <td><a href="https://newmt2.com/">https://newmt2.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Zelonia</td>
+              <td><a href="https://nova.zelonia.com/en">https://nova.zelonia.com/en</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Normal</td>
+            </tr>
+
+            <tr>
+              <td>Antarctica</td>
+              <td><a href="https://antarctica2.eu/">https://antarctica2.eu/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Balmora</td>
+              <td><a href="https://balmora.pl/">https://balmora.pl/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Aeris2</td>
+              <td><a href="https://aeris2.net/">https://aeris2.net/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Normal</td>
+            </tr>
+
+            <tr>
+              <td>Metin2set</td>
+              <td><a href="https://metin2set.ro/">https://metin2set.ro/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Normal</td>
+            </tr>
+
+            <tr>
+              <td>Siriusmt2</td>
+              <td><a href="https://www.siriusmt2.to/">https://www.siriusmt2.to/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Thanoa</td>
+              <td><a href="https://thanoa.fr/">https://thanoa.fr/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Azyrah</td>
+              <td><a href="https://azyrah.to/">https://azyrah.to/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Metin2novels</td>
+              <td><a href="https://metin2novels.com/">https://metin2novels.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Elitemt2</td>
+              <td><a href="https://elitemt2.eu/">https://elitemt2.eu/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Normal</td>
+            </tr>
+
+            <tr>
+              <td>Misali2</td>
+              <td><a href="https://www.misali2.com/">https://www.misali2.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Landofheroes</td>
+              <td><a href="https://landofheroes.eu/">https://landofheroes.eu/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Hydra2</td>
+              <td><a href="https://hydra2.ro/">https://hydra2.ro/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Normal</td>
+            </tr>
+
+            <tr>
+              <td>Saja2</td>
+              <td><a href="https://saja2.com/">https://saja2.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Normal</td>
+            </tr>
+
+            <tr>
+              <td>M2mester</td>
+              <td><a href="https://mt2mester.eu/">https://mt2mester.eu/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Normal</td>
+            </tr>
+
+            <tr>
+              <td>Ytian3</td>
+              <td><a href="https://www.yitian3.com/">https://www.yitian3.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Normal</td>
+            </tr>
+
+            <tr>
+              <td>Shiro2</td>
+              <td><a href="https://shiro2.online/">https://shiro2.online/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Zelius2</td>
+              <td><a href="https://zelius2.com.tr/">https://zelius2.com.tr/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Normal</td>
+            </tr>
+
+            <tr>
+              <td>Odysseus</td>
+              <td><a href="https://www.odysseus-oldschool.org/">https://www.odysseus-oldschool.org/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Normal</td>
+            </tr>
+
+            <tr>
+              <td>Zessen2</td>
+              <td><a href="https://zessen2.com/">https://zessen2.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Normal</td>
+            </tr>
+
+            <tr>
+              <td>Cronikalmt2</td>
+              <td><a href="https://cronikalmt2.tk/">https://cronikalmt2.tk/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Xenoxmt2</td>
+              <td><a href="https://xenoxmt2.com/">https://xenoxmt2.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Normal</td>
+            </tr>
+
+            <tr>
+              <td>Azuria</td>
+              <td><a href="https://azuria.pt/">https://azuria.pt/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Oldwar2</td>
+              <td><a href="https://oldwar2.org/">https://oldwar2.org/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Normal</td>
+            </tr>
+
+            <tr>
+              <td>Leria</td>
+              <td><a href="https://leria.hk/">https://leria.hk/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Ekura</td>
+              <td><a href="https://www.ekura.cz/">https://www.ekura.cz/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Normal</td>
+            </tr>
+
+            <tr>
+              <td>Avaria2</td>
+              <td><a href="https://avaria2.biz/">https://avaria2.biz/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Normal</td>
+            </tr>
+
+            <tr>
+              <td>Signia2</td>
+              <td><a href="https://signia2.net/">https://signia2.net/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Normal</td>
+            </tr>
+
+            <tr>
+              <td>Alaska2</td>
+              <td><a href="https://alaska2.ro/">https://alaska2.ro/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Calliope</td>
+              <td><a href="https://global.calliope2-international.com/">https://global.calliope2-international.com/</a>
+              </td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Ava2</td>
+              <td><a href="https://www.ava2.org/">https://www.ava2.org/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Normal</td>
+            </tr>
+
+            <tr>
+              <td>Velor2</td>
+              <td><a href="https://www.velor2.global/">https://www.velor2.global/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Elsmt2</td>
+              <td><a href="https://elsmetin2.com/">https://elsmetin2.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Shiva</td>
+              <td><a href="https://shiva.international/">https://shiva.international/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Ayaz2</td>
+              <td><a href="https://ayazmt2.com/">https://ayazmt2.com/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Dede2</td>
+              <td><a href="https://www.dede2.com.tr/tanitim/">https://www.dede2.com.tr/tanitim/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+            <tr>
+              <td>Ynari</td>
+              <td><a href="https://ynari.gg/">https://ynari.gg/</a></td>
+              <td><span class="badge badge-success">Working</span></td>
+              <td>Premium</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h1 class="display-4">Pricing</h1>
+    <p class="lead">For payment or any questions, do not hesitate to contact us on <a
+        href="https://discord.gg/B7VdJv5BXm">discord</a>.</p>
+  </div>
+
+  <div class="container">
+    <div class="card-deck mb-3 text-center">
+      <div class="card mb-4 box-shadow">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-normal">10 days</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">€10<small class="text-muted"></small></h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>6 clients available</li>
+            <li>Works on Gameforge/private servers</li>
+            <li>Normal fishbot</li>
+            <li>TextingBot</li>
+            <li>SwitchBot</li>
+            <li>Farm bot</li>
+            <li>SearchBot</li>
+            <li>Autometin farm</li>
+            <li>Pickup</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card mb-4 box-shadow">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-normal">30 days</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">€20<small class="text-muted"></small></h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>12 clients available</li>
+            <li>Works on Gameforge/private servers</li>
+            <li>x55 damage war,x200 damage ninja</li>
+            <li>Okey event</li>
+            <li>Catch the King</li>
+            <li>Farmbot Control</li>
+            <li>Fishbot instantly</li>
+            <li>Normal fishbot</li>
+            <li>TextingBot</li>
+            <li>SwitchBot</li>
+            <li>Mining bot</li>
+            <li>Autodungeon</li>
+            <li>Farm bot</li>
+            <li>Captcha resolver</li>
+            <li>Level bot</li>
+            <li>SearchBot</li>
+            <li>Antiban</li>
+            <li>Energy bot</li>
+            <li>Autometin farm</li>
+            <li>Macro fishbot</li>
+            <li>Pickup</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card mb-4 box-shadow">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-normal">Lifetime</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">€55<small class="text-muted"></small></h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Unlimited Clients</li>
+            <li>Works on both Gameforge and Privatex55 damage war,x200 damage ninja</li>
+            <li>Okey event</li>
+            <li>Catch the King</li>
+            <li>Farmbot Control</li>
+            <li>Fishbot instantly</li>
+            <li>Normal fishbot</li>
+            <li>TextingBot</li>
+            <li>SwitchBot</li>
+            <li>Mining bot</li>
+            <li>Autodungeon</li>
+            <li>Farm bot</li>
+            <li>Captcha resolver</li>
+            <li>Level bot</li>
+            <li>SearchBot</li>
+            <li>Antiban</li>
+            <li>Energy bot</li>
+            <li>Autometin farm</li>
+            <li>Macro fishbot</li>
+            <li>Pickup</li>
+            <li>Pickup filter</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="content-wrapper" style="background-color: #343a40">
+    <div class="content-text">
+      <h1 class="display-4" style="color: white; padding: 3%;">Supported payments</h1>
+      <p class="lead" style="color: white;">After payment, please message us on <img src="logos/discord-logo.png" alt="Discord Logo" style="width: 20px; height: auto; padding: 1px;"><a href="http://discordapp.com/users/1067108267093926028">discord</a> (metinbotof) for activation.</p>
+      <div class="container">
+        <div class="card-deck mb-3 text-center">
+          <div class="card mb-4 box-shadow">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">Paypal</h4>
+            </div>
+            <div class="card-body">
+              <img src="paypal.png" alt="Paypal" style="width: 50px; height: auto;">
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Discord support</li>
+                <li>Email support</li>
+              </ul>
+              <a href="http://paypal.me/metinbot" style="text-decoration: none;">
+                <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
+              </a>
+            </div>
+          </div>
+          <div class="card mb-4 box-shadow">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">Revolut</h4>
+            </div>
+            <div class="card-body">
+              <img src="revolut.png" alt="Revolut" style="width: 50px; height: auto;">
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Discord support</li>
+                <li>Email support</li>
+              </ul>
+              <a href="form-revolut.html" style="text-decoration: none;">
+                <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
+              </a>
+            </div>
+          </div>
+          <div class="card mb-4 box-shadow">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">Paysafecard</h4>
+            </div>
+            <div class="card-body">
+              <img src="paysafecard.png" alt="Paysafecard" style="width: 50px; height: auto;">
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Discord support</li>
+                <li>Email support</li>
+              </ul>
+              <a href="form-paysafe.html" style="text-decoration: none;">
+                <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
+              </a>
+            </div>
+          </div>
+          <div class="card mb-4 box-shadow">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">Ethereum</h4>
+            </div>
+            <div class="card-body">
+              <img src="ethereum.png" alt="Ethereum" style="width: 50px; height: auto;">
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Discord support</li>
+                <li>Email support</li>
+              </ul>
+              <a href="form-crypto.html" style="text-decoration: none;">
+                <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <div id="contact" class="contact-section">
+    <h2 class="contact-heading">Contact</h2>
+    <p class="contact-info">
+      <a class="nav-link" href="https://discord.gg/B7VdJv5BXm">
+        <img src="logos/discord-logo.png" alt="Discord Logo" style="width: 20px; height: auto;">
+        Discord
+      </a>
+    </p>
+  </div>
+
+  <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = x.length }
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      x[slideIndex - 1].style.display = "block";
+    }
+  </script>
+
+</body>
+
+</html>

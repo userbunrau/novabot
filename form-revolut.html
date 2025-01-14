@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MTBot Metin2</title>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+    }
+
+    .bg {
+      /* The image used */
+      background-image: url("bg.png");
+
+      /* Full height */
+      height: 100%;
+
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      /* Position the overlay text container */
+      position: relative;
+    }
+
+    .overlay-text {
+      /* Position the overlay text */
+      position: absolute;
+      top: 40%;
+      left: 3%;
+      /* transform: translate(-50%, -50%); */
+
+      /* Add a transparent background */
+      background-color: rgba(0, 0, 0, 0.5);
+
+      /* Add padding and text color */
+      padding: 10px;
+      color: #fff;
+    }
+
+    .overlay-text h1 {
+      margin: 0;
+    }
+
+    .content-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .content-text {
+      flex: 1;
+      text-align: center;
+      padding: 40px;
+    }
+
+    .content-image {
+      flex: 1;
+      text-align: center;
+      padding: 40px;
+    }
+  </style>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+  <style>
+    
+
+    .mySlides {
+      text-align:center;
+      margin-left: auto;
+      margin-right: auto;
+      width:100%;
+    }
+
+    .header {
+      padding: 20px;
+      color: #333;
+      text-align: center;
+    }
+
+    .header h2 {
+      font-size: 32px;
+      font-weight: bold;
+      margin: 0;
+      text-transform: uppercase;
+    }
+
+    /* CSS for the navigation bar */
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 5;
+    }
+
+    /* CSS styles for the contact section */
+    .contact-section {
+      background-color: #f1f1f1;
+      padding: 20px;
+      text-align: center;
+    }
+    .contact-heading {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    .contact-info {
+      font-size: 16px;
+    }
+
+    .navbar-nav .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .dropdown-menu {
+      margin-top: 0;
+    }
+
+    .paragraph {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+    <a class="navbar-brand" href="index.html">
+      <img src="M2_bot.png" alt="Logo" style="width: 50px; height: auto;">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Social Media
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="https://www.youtube.com/@mt2bot">
+              <img src="logos/youtube-logo.png" alt="Youtube Logo" style="width: 20px; height: auto;">
+              Youtube
+            </a>
+            <a class="dropdown-item" href="https://www.tiktok.com/@mt2bot">
+              <img src="logos/TikTok-icon-glyph.png" alt="TikTok Logo" style="width: 20px; height: auto;">
+              TikTok
+            </a>
+            <a class="dropdown-item" href="http://discordapp.com/users/1067108267093926028">
+              <img src="logos/discord-logo.png" alt="Discord Logo" style="width: 20px; height: auto;">
+              Discord
+            </a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://mega.nz/file/ZmkFiJgL#c7Jjq_LaNgmaNljEka_0t6bM3nOAWSp72JzWm8tl5HY">Download</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    // Add sticky class to navbar on scroll
+    window.onscroll = function() {
+      var navbar = document.querySelector('.navbar');
+      if (window.pageYOffset > 0) {
+        navbar.classList.add('sticky');
+      } else {
+        navbar.classList.remove('sticky');
+      }
+    };
+  </script>
+
+<div class="content-wrapper" style="padding:10%">
+  <div class="content-text">
+    <h1 class="display-4" style="padding: 5%;">Revolut payment</h1>
+    <p class="lead">Revolut payments are made at this tag: @vlg31</p>
+    <p class="lead">After the transfer, please message us on <img src="logos/discord-logo.png" alt="Discord Logo" style="width: 20px; height: auto; padding: 1px;"><a href="http://discordapp.com/users/1067108267093926028">discord</a> (metinbotof) for activation.</p>
+  </div>
+</div>
+
+<!-- <div class="content-wrapper" style="padding:10%">
+    <div class="content-text">
+      <h1 class="display-4" style="padding: 1%;">Paysafecard payment</h1>
+      <p class="lead">For paysafecard payments, please fill out the form below or message us on <a href="discord.com">discord.</a></p>
+        <form name="paysafe-form" method="POST" data-netlify="true" onSubmit="submit" data-netlify-honeypot="bot-field">
+          <input class="d-none" name="bot-field">
+            <div class="form-row justify-content-md-center">
+              <div class="col-md-4 mb-3">
+                <label for="validationDefault01">First name</label>
+                <input type="text" class="form-control" id="validationDefault01" name="First Name" placeholder="First name" required>
+              </div>
+            </div>
+            <div class="form-row justify-content-md-center">
+              <div class="col-md-4 mb-3">
+                <label for="validationDefault02">Last name</label>
+                <input type="text" class="form-control" id="validationDefault02" name="Last Name" placeholder="Last name" required>
+              </div>
+            </div>
+            <div class="form-row justify-content-md-center">
+              <div class="col-md-4 mb-3">
+                <label for="validationDefault04">Email</label>
+                <input type="email" class="form-control" id="validationDefault04" name="Email" placeholder="Email" required>
+              </div>
+            </div>
+            <div class="form-row justify-content-md-center">
+              <div class="col-md-4 mb-3">
+                <label for="validationDefault03">Paysafecard Code</label>
+                <input type="text" class="form-control" id="validationDefault03" name="Code" placeholder="Paysafe Code" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                <label class="form-check-label" for="invalidCheck2">
+                  Agree to terms and conditions
+                </label>
+              </div>
+            </div>
+            <button class="btn btn-primary" type="submit">Submit</button>
+          </form>
+    </div>
+  </div> -->
+
+  <div id="contact" class="contact-section">
+    <h2 class="contact-heading">Contact</h2>
+    <p class="contact-info">
+      <a class="nav-link" href="http://discordapp.com/users/1067108267093926028">
+        <img src="logos/discord-logo.png" alt="Discord Logo" style="width: 20px; height: auto;">
+        Discord (metinbotof)
+      </a>
+    </p>
+  </div>
+  
+  <script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+  
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+  
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    x[slideIndex-1].style.display = "block";  
+  }
+  </script>
+
+</body>
+</html>
